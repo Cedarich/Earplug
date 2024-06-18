@@ -1,0 +1,278 @@
+*,
+::before*,
+::after* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-bottom: 15px;
+  width: 100vw;
+}
+
+.carousel {
+  /* width: 90vw;
+  height: 90vh; */
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-button1 {
+  position: absolute;
+  z-index: z;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-top: 15%;
+  transform: translateY(-50%);
+  color: rgba(224, 220, 220, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+.carousel-button1:hover,
+.carousel-button1:focus {
+  color: rgb(116, 30, 30);
+}
+
+.carousel-button1:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button1 {
+  right: 1rem;
+}
+
+.carousel-button2 {
+  position: absolute;
+  z-index: z;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-top: 15%;
+  transform: translateY(-50%);
+  color: rgba(224, 220, 220, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+.carousel-button2:hover,
+.carousel-button2:focus {
+  color: rgb(116, 30, 30);
+}
+
+.carousel-button2:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button2 {
+  left: 1rem;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  border-bottom: 1.5px solid black;
+  background: white;
+}
+
+.logo > img {
+  display: flex;
+  width: 200px;
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+nav {
+  margin: 10px;
+  padding: 16px;
+}
+nav ul li {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  margin: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: ease-out;
+}
+
+nav ul li:hover {
+  color: rgb(145, 141, 141);
+}
+
+.icons {
+  margin: 10px;
+  padding: 32px;
+  cursor: pointer;
+  transition: ease-out;
+}
+
+.icons i:hover {
+  color: rgb(145, 141, 141);
+}
+
+.icons i {
+  display: inline;
+  font-size: 20px;
+  margin: 5px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+main {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  color: white;
+  margin-left: 15%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -25px;
+}
+
+main > h1 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+main > h2 {
+  font-size: 47px;
+  font-weight: bolder;
+}
+
+.link > a {
+  font-size: 14px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+
+.link {
+  display: inline-block;
+  width: 230px;
+  height: 13px;
+  padding: 15px;
+  border-radius: 2px;
+  margin-top: -5px;
+  background-color: rgb(218, 216, 216);
+  border: 1px solid rgb(218, 216, 216);
+  cursor: pointer;
+}
+
+.link a:hover {
+  color: rgb(145, 141, 141);
+  transition: ease-out;
+}
+
+.content {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(images/banner.jpg);
+  /* background-image: url("https://source.unsplash.com/RgMOBFLGoZM"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.subscribe {
+  position: absolute;
+  width: 295px;
+  height: 300px;
+  bottom: -8px;
+  right: 12px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe h2 {
+  font-size: 12px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.subscribe form {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe input {
+  padding: 10px;
+  left: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  height: 10px;
+}
+form {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 290px;
+  height: 140px;
+  margin-left: 10px;
+}
+.subscribe button {
+  padding: 8px;
+  background-color: #2d2929;
+  color: #fff;
+  border: none;
+  margin-left: 32%;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 105px;
+  justify-content: center;
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+.subscribe button:hover {
+  background-color: #333;
+}
+
+.aside {
+  position: relative;
+  margin-top: 50px;
+  background-image: url(images/aside.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 310px;
+  height: 98px;
+  margin-left: 10px;
+  border-radius: 3.5px;
+}
+.aside > img {
+  margin: 10;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 3px;
+}
