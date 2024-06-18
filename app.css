@@ -1,3 +1,4 @@
+/* Reset margin and padding for all elements and set box-sizing to border-box */
 *,
 ::before*,
 ::after* {
@@ -6,28 +7,31 @@
   box-sizing: border-box;
 }
 
+/* Basic styling for the body */
 body {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
+/* Container styling */
 .container {
   margin-bottom: 15px;
   width: 100vw;
 }
 
+/* Carousel styling */
 .carousel {
-  /* width: 90vw;
-  height: 90vh; */
   position: relative;
   padding: 0;
   margin: 0;
 }
 
+/* Carousel navigation button styling (right) */
 .carousel-button1 {
   position: absolute;
-  z-index: z;
+  z-index: 10;
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -37,8 +41,10 @@ body {
   cursor: pointer;
   border-radius: 0.25rem;
   padding: 0.5rem;
+  right: 1rem;
 }
 
+/* Hover and focus effects for the right carousel button */
 .carousel-button1:hover,
 .carousel-button1:focus {
   color: rgb(116, 30, 30);
@@ -48,13 +54,10 @@ body {
   outline: 1px solid black;
 }
 
-.carousel-button1 {
-  right: 1rem;
-}
-
+/* Carousel navigation button styling (left) */
 .carousel-button2 {
   position: absolute;
-  z-index: z;
+  z-index: 10;
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -64,7 +67,10 @@ body {
   cursor: pointer;
   border-radius: 0.25rem;
   padding: 0.5rem;
+  left: 1rem;
 }
+
+/* Hover and focus effects for the left carousel button */
 .carousel-button2:hover,
 .carousel-button2:focus {
   color: rgb(116, 30, 30);
@@ -74,10 +80,7 @@ body {
   outline: 1px solid black;
 }
 
-.carousel-button2 {
-  left: 1rem;
-}
-
+/* Header styling */
 header {
   display: flex;
   width: 100%;
@@ -86,6 +89,7 @@ header {
   background: white;
 }
 
+/* Logo styling */
 .logo > img {
   display: flex;
   width: 200px;
@@ -95,10 +99,12 @@ header {
   margin-right: 20px;
 }
 
+/* Navigation styling */
 nav {
   margin: 10px;
   padding: 16px;
 }
+
 nav ul li {
   display: inline;
   justify-content: center;
@@ -112,10 +118,12 @@ nav ul li {
   transition: ease-out;
 }
 
+/* Navigation item hover effect */
 nav ul li:hover {
   color: rgb(145, 141, 141);
 }
 
+/* Icons container styling */
 .icons {
   margin: 10px;
   padding: 32px;
@@ -123,10 +131,12 @@ nav ul li:hover {
   transition: ease-out;
 }
 
+/* Icon hover effect */
 .icons i:hover {
   color: rgb(145, 141, 141);
 }
 
+/* Icon styling */
 .icons i {
   display: inline;
   font-size: 20px;
@@ -135,6 +145,7 @@ nav ul li:hover {
   align-items: flex-end;
 }
 
+/* Main content styling */
 main {
   display: inline-block;
   justify-content: center;
@@ -147,23 +158,19 @@ main {
   margin-top: -25px;
 }
 
+/* Main headline styling */
 main > h1 {
   font-size: 12px;
   font-weight: 700;
 }
 
+/* Subheadline styling */
 main > h2 {
   font-size: 47px;
   font-weight: bolder;
 }
 
-.link > a {
-  font-size: 14px;
-  font-weight: bolder;
-  text-decoration: none;
-  color: black;
-}
-
+/* Link button styling */
 .link {
   display: inline-block;
   width: 230px;
@@ -176,25 +183,35 @@ main > h2 {
   cursor: pointer;
 }
 
+/* Link text styling */
+.link > a {
+  font-size: 14px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+
+/* Link hover effect */
 .link a:hover {
   color: rgb(145, 141, 141);
   transition: ease-out;
 }
 
+/* Content section styling */
 .content {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
-    url(images/banner.jpg);
-  /* background-image: url("https://source.unsplash.com/RgMOBFLGoZM"); */
+    url(images/happy-man.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
 
+/* Subscribe section styling */
 .subscribe {
   position: absolute;
   width: 295px;
@@ -206,6 +223,7 @@ main > h2 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Subscribe section headline styling */
 .subscribe h2 {
   font-size: 12px;
   margin-bottom: 0px;
@@ -215,11 +233,13 @@ main > h2 {
   text-transform: uppercase;
 }
 
+/* Subscribe form styling */
 .subscribe form {
   display: flex;
   flex-direction: column;
 }
 
+/* Subscribe input field styling */
 .subscribe input {
   padding: 10px;
   left: 12px;
@@ -229,6 +249,8 @@ main > h2 {
   font-size: 14px;
   height: 10px;
 }
+
+/* General form styling */
 form {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -236,6 +258,8 @@ form {
   height: 140px;
   margin-left: 10px;
 }
+
+/* Subscribe button styling */
 .subscribe button {
   padding: 8px;
   background-color: #2d2929;
@@ -251,14 +275,21 @@ form {
   height: 30px;
 }
 
+/* Subscribe button hover effect */
 .subscribe button:hover {
   background-color: #333;
 }
 
+/* Aside section styling */
 .aside {
   position: relative;
   margin-top: 50px;
-  background-image: url(images/aside.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(images/aside.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -267,10 +298,13 @@ form {
   margin-left: 10px;
   border-radius: 3.5px;
 }
+
+/* Placeholder image styling */
 .aside > img {
   margin: 10;
 }
 
+/* Label styling */
 label {
   font-size: 12px;
   font-weight: bold;
